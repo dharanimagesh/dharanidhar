@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Page</title>
+    <style>
+        /* Add some basic styles for better visualization */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        main {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Basic Web Page</h1>
+    </header>
+
+    <main>
+        <h2>Welcome to My Page</h2>
+        <p>This is a basic web page with some HTML elements.</p>
+
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <h4>Heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+
+        <p>Click <a href="https://www.example.com" target="_blank">here</a> to visit Example.com.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Basic Web Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Column Layout</title>
+    <style>
+        /* Add some basic styles for better visualization */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+        }
+        .column:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        .column:nth-child(even) {
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Three-Column Layout</h1>
+    </header>
+
+    <main>
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is the content of column 1.</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>This is the content of column 2.</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>This is the content of column 3.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Three-Column Layout. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+Next, let's move on to the layout exercise and create a three-column layout with a header and footer using CSS. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        /* Add some basic styles for better visualization */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <h2>Web Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <span class="error-message" id="nameError"></span>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <span class="error-message" id="emailError"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="error-message" id="passwordError"></span>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error-message" id="confirmPasswordError"></span>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+        <span class="error-message" id="genderError"></span>
+
+        <label>Favorite Color:</label>
+        <select name="favoriteColor" required>
+            <
+Finally, let's create a web form with different types of input fields and validation rules using HTML and JavaScript:
